@@ -32,10 +32,9 @@ const Jokes = () => {
 
   if (loading) {
     return (
-      <BounceLoader
-        color="#36d7b7"
-        className="flex flex-col justify-center items-center"
-      />
+      <div className="h-auto flex items-center justify-center">
+        <BounceLoader color="#36d7b7" />;
+      </div>
     );
   }
 
