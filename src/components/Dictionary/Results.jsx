@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import BounceLoader from "react-spinners/BounceLoader";
-import { InputContext } from "../../App";
+import { InputContext } from "../ContextAPI/Context";
+
 import Antonym from "./Antonym";
 import Example from "./Example";
 import MeaningList from "./MeaningList";

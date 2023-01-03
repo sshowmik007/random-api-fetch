@@ -1,10 +1,11 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import { InputContext } from "./components/ContextAPI/Context";
 import Header from "./components/Dictionary/Header";
 import Results from "./components/Dictionary/Results";
 import Jokes from "./components/Jokes";
+import Darkmode from "./components/DarkMode/Darkmode";
 
 // crete context
-export const InputContext = createContext();
 
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -17,9 +18,10 @@ function App() {
   return (
     <InputContext.Provider value={value}>
       <div className="App">
-        <Header />
+        {/* <Header />
         <Results />
-        {/* <Jokes /> */}
+        <Jokes /> */}
+        <Darkmode />
       </div>
     </InputContext.Provider>
   );

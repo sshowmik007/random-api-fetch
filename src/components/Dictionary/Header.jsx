@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { InputContext } from "./../../App";
+import { InputContext } from "../ContextAPI/Context";
 
 const Header = () => {
   const [value, setValue] = useState("");
